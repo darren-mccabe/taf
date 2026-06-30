@@ -1,15 +1,33 @@
+<div align="center">
+
 # Trustworthy AI Forensics (TAF)
 
-### An ontology-supported framework for legally grounded procurement assessment of AI-enabled digital forensics tools
+### *An ontology-supported framework for legally grounded procurement assessment of AI-enabled digital forensics tools*
 
 [![Persistent ID](https://img.shields.io/badge/Persistent_ID-w3id.org%2Ftaf-1d4ed8?style=for-the-badge&logo=internetexplorer&logoColor=white)](https://w3id.org/taf)
-[![Ontology](https://img.shields.io/badge/Ontology-OWL%20%7C%20RDF%20%7C%20SHACL-6d28d9?style=for-the-badge&logo=semanticweb&logoColor=white)](#semantic-web-outputs)
-[![Research Prototype](https://img.shields.io/badge/Status-Research%20Prototype-ca8a04?style=for-the-badge&logo=googlescholar&logoColor=white)](#status)
+[![Ontology](https://img.shields.io/badge/Ontology-OWL%20%7C%20RDF%20%7C%20SHACL-6d28d9?style=for-the-badge&logo=databricks&logoColor=white)](#semantic-web-outputs)
+[![Status](https://img.shields.io/badge/Status-Research%20Prototype-ca8a04?style=for-the-badge&logo=googlescholar&logoColor=white)](#project-status)
 [![License: MIT](https://img.shields.io/badge/License-MIT-15803d?style=for-the-badge&logo=open-source-initiative&logoColor=white)](LICENSE)
 
-> **TAF helps turn legal and procurement obligations into traceable governance safeguards, evidence indicators, and procurement-risk signals for AI systems used in digital forensics.**
+**Making AI forensic procurement evidence visible, traceable, and reviewable.**
 
-**Quick links:** [Why TAF?](#why-taf) • [Framework Architecture](#framework-architecture) • [Framework Layers](#framework-layers) • [Traceability Chain](#traceability-chain) • [Semantic Web Outputs](#semantic-web-outputs) • [Roadmap](#roadmap)
+[Why TAF](#why-taf) •
+[Framework Architecture](#framework-architecture) •
+[Framework Layers](#framework-layers) •
+[Traceability Chain](#traceability-chain) •
+[Expert Validation](#expert-validation-for-the-phd) •
+[Semantic Web Outputs](#semantic-web-outputs) •
+[Roadmap](#roadmap)
+
+</div>
+
+---
+
+> [!IMPORTANT]
+> **TAF helps turn legal and procurement obligations into traceable governance safeguards, evidence indicators, and procurement-risk signals for AI systems used in digital forensics.**
+>
+> TAF is **not** a final compliance engine or legal opinion.  
+> It is a **research and expert-review support framework** for making procurement evidence more visible, structured, and auditable.
 
 ---
 
@@ -22,20 +40,29 @@ Traditional procurement documents often focus on vendor functionality, price, an
 - chain of custody and evidence integrity;
 - provenance, logging, and traceability;
 - human oversight and escalation;
-- bias, representativeness, and data governance controls;
+- bias, representativeness, and data-governance controls;
 - cybersecurity, robustness, and resilience;
 - transparency, auditability, and documentation.
 
 **Trustworthy AI Forensics (TAF)** addresses this gap by modelling the relationship between legal provisions, procurement principles, governance safeguards, and textual evidence in procurement artefacts.
 
-> **TAF is not a final compliance engine or legal opinion.**  
-> It is a regulatory-learning and expert-review support framework for making procurement evidence more visible, structured, and auditable.
+---
+
+## At a glance
+
+| Area | Summary |
+|---|---|
+| **Problem** | Procurement documentation may not clearly show whether AI-enabled forensic tools are governable, auditable, and trustworthy. |
+| **TAF response** | TAF translates legal and governance expectations into ontology-backed safeguards, evidence indicators, and risk signals. |
+| **Primary contribution** | A legally grounded, deterministic, ontology-supported screening framework for AI-forensic procurement artefacts. |
+| **Outputs** | HTML dashboards, RDF/XML, SHACL-style artefacts, SPARQL queries, JSON mappings, and traceability structures. |
+| **Research value** | Supports expert review, reproducibility, semantic traceability, and structured legal/governance interpretation. |
 
 ---
 
 ## Research contribution
 
-TAF contributes an ontology-supported, legally grounded, deterministic screening framework for AI forensic tool procurement.
+TAF contributes an ontology-supported, legally grounded, deterministic screening framework for AI-forensic tool procurement.
 
 Instead of only asking whether a tool performs well, TAF asks:
 
@@ -51,17 +78,6 @@ The framework translates legal and procurement expectations into reusable semant
 | **Evidence indicators** | Links safeguards to detectable terms, phrases, and source-wired procurement evidence. |
 | **Risk dimensions** | Aggregates missing or weak evidence into structural procurement-risk signals. |
 | **Semantic exports** | Produces machine-readable ontology and validation artefacts for review and reuse. |
-
----
-
-## Who is this for?
-
-| Stakeholder | How TAF helps |
-|---|---|
-| **AI system providers** | Understand the evidence customers may expect in procurement documentation. |
-| **Customers and deployers** | Assess whether vendor artefacts expose governance, oversight, and forensic safeguards. |
-| **Regulators and policymakers** | Observe recurring documentation gaps and support regulatory-learning or sandbox preparation. |
-| **Researchers** | Reuse the ontology, traceability chain, and evaluation method for trustworthy AI procurement research. |
 
 ---
 
@@ -90,9 +106,10 @@ flowchart TD
     A --> B --> C --> D --> E --> F --> G --> H
 ```
 
-### Full architecture breakdown
+<details>
+<summary><strong>Can’t read the Mermaid diagram clearly on GitHub?</strong> Click for the full architecture breakdown.</summary>
 
-If the GitHub Mermaid theme makes the diagram hard to read, here is the same architecture in plain text:
+### Full architecture breakdown
 
 | Step | Component | What it does |
 |---:|---|---|
@@ -118,7 +135,7 @@ Legal & governance sources
     -> Outputs
 ```
 
-> This dual presentation is intentional: the Mermaid diagram gives a quick visual summary, while the table guarantees readability in both GitHub light mode and dark mode.
+</details>
 
 ---
 
@@ -163,12 +180,25 @@ EU AI Act Article 10
   -> structural procurement risk
 ```
 
-The goal is to avoid a shallow jump from **law → keywords**.  
+The goal is to avoid a shallow jump from **law -> keywords**.  
 TAF inserts an interpretation layer so that legal intent is preserved before deterministic screening is applied.
 
 ---
 
-## Core ontology vocabulary
+<details>
+<summary><strong>Who is this for?</strong></summary>
+
+| Stakeholder | How TAF helps |
+|---|---|
+| **AI system providers** | Understand the evidence customers may expect in procurement documentation. |
+| **Customers and deployers** | Assess whether vendor artefacts expose governance, oversight, and forensic safeguards. |
+| **Regulators and policymakers** | Observe recurring documentation gaps and support regulatory-learning or sandbox preparation. |
+| **Researchers** | Reuse the ontology, traceability chain, and evaluation method for trustworthy AI procurement research. |
+
+</details>
+
+<details>
+<summary><strong>Core ontology vocabulary</strong></summary>
 
 | Concept | Meaning |
 |---|---|
@@ -180,11 +210,10 @@ TAF inserts an interpretation layer so that legal intent is preserved before det
 | `RiskDimension` | A governance-risk dimension affected by missing or weak evidence. |
 | `StructuralProcurementRisk` | The resulting procurement-risk interpretation based on evidence coverage and safeguard strength. |
 
----
+</details>
 
-## Example safeguard areas
-
-TAF currently focuses on evidence that supports trustworthy AI use in digital forensic contexts, including:
+<details>
+<summary><strong>Example safeguard areas</strong></summary>
 
 | Safeguard area | Example evidence indicators |
 |---|---|
@@ -195,9 +224,10 @@ TAF currently focuses on evidence that supports trustworthy AI use in digital fo
 | **Accuracy, robustness, and cybersecurity** | validation, testing, benchmarking, resilience, vulnerability management |
 | **Transparency and documentation** | technical documentation, instructions for use, service levels, supplier cooperation |
 
----
+</details>
 
-## Legal and governance sources
+<details>
+<summary><strong>Legal and governance sources</strong></summary>
 
 TAF is designed around selected legal, procurement, AI-governance, cybersecurity, and digital-forensic sources, including:
 
@@ -210,24 +240,25 @@ TAF is designed around selected legal, procurement, AI-governance, cybersecurity
 - **ISO/IEC 42001 and ISO MSS concepts** — AI management-system interpretation.
 - **NIST AI RMF** — AI risk-management vocabulary and governance framing.
 
+</details>
+
 ---
 
 ## Semantic Web outputs
 
 The framework is intended to support both human review and machine-readable reuse.
 
-| Artefact | Purpose |
-|---|---|
-| `mtalo_complete_protege_ready.rdf` | Protégé-targeted RDF/XML ontology export. |
-| `mtalo_shapes.rdf` | SHACL-style validation constraints. |
-| `mtalo_queries.rq` | SPARQL queries for inspecting ontology and ABox patterns. |
-| `mtalo_export_manifest.json` | Export manifest and publication metadata. |
-| `competency_questions.json` | Reviewable competency-question source file. |
-| `mcc_ai_checker_output.html` | Human-readable report and audit dashboard. |
+| Artefact | Purpose | Status |
+|---|---|---|
+| `mtalo_complete_protege_ready.rdf` | Protégé-targeted RDF/XML ontology export | ✅ |
+| `mtalo_shapes.rdf` | SHACL-style validation constraints | ✅ |
+| `mtalo_queries.rq` | SPARQL queries for inspecting ontology and ABox patterns | ✅ |
+| `mtalo_export_manifest.json` | Export manifest and publication metadata | ✅ |
+| `competency_questions.json` | Reviewable competency-question source file | ✅ |
+| `mcc_ai_checker_output.html` | Human-readable report and audit dashboard | ✅ |
 
----
-
-## Suggested repository layout
+<details>
+<summary><strong>Suggested repository layout</strong></summary>
 
 ```text
 taf/
@@ -248,9 +279,14 @@ taf/
     └── mcc_ai_checker.py
 ```
 
+</details>
+
 ---
 
 ## How to use
+
+<details open>
+<summary><strong>Open usage guidance</strong></summary>
 
 ### View the public project
 
@@ -288,11 +324,24 @@ Open the generated report to inspect the human-readable traceability dashboard:
 reports/mcc_ai_checker_output.html
 ```
 
+</details>
+
 ---
 
-## Status
+## Project status
 
-TAF is a **research prototype** and PhD artefact.
+### Summary
+
+| Area | Status |
+|---|---|
+| **Overall maturity** | 🟡 Research prototype |
+| **Core ontology design** | ✅ Implemented |
+| **Traceability model** | ✅ Implemented |
+| **HTML reporting** | ✅ Implemented |
+| **Semantic exports** | ✅ Implemented |
+| **Expert validation** | 🟡 Minimum still required |
+| **Final thesis-grade validation** | 🟡 Still to complete |
+| **Automated legal conclusions** | ❌ Not claimed |
 
 ### Completed / implemented in the current prototype
 
@@ -301,17 +350,43 @@ TAF is a **research prototype** and PhD artefact.
 - ✅ Legal-provision to governance-safeguard traceability
 - ✅ Competency-question driven requirements structure
 - ✅ Contract evidence screening dashboard
-- ✅ Legal-provision → safeguard → evidence-indicator → risk-dimension mapping
+- ✅ Legal-provision -> safeguard -> evidence-indicator -> risk-dimension mapping
 - ✅ RDF/XML ontology export preview
 - ✅ SHACL-style validation artefacts
 - ✅ SPARQL query artefacts
 - ✅ JSON mapping / manifest-style publication artefacts
 - ✅ Human-readable HTML report output
 
-### Expert validation still required
+---
+
+## Expert validation for the PhD
+
+### Bare minimum for PhD-level validation
+
+For a **credible PhD minimum**, the README should state that TAF still requires a **small but defensible expert-validation exercise** focused on the interpretation layers of the framework.
+
+A reasonable **bare minimum** is:
+
+- **5 to 8 experts** in total;
+- covering a mix of:
+  - **AI / trustworthy AI governance**
+  - **digital forensics**
+  - **public procurement / procurement law**
+  - **data protection / legal or regulatory interpretation**
+- using a **structured review instrument** such as:
+  - relevance / clarity / completeness scoring;
+  - mapping-validity review;
+  - comments on missing safeguards or misleading evidence indicators;
+  - review of worked examples or example procurement records.
+
+> [!TIP]
+> This does **not** need to be a huge validation study to be PhD-credible.  
+> A focused expert review with a clear protocol, transparent criteria, and documented feedback can be enough as a **minimum validation stage**, especially when positioned honestly as prototype validation rather than final industrial certification.
+
+### What expert validation is still required for
 
 Expert validation is **not** required to prove that the code runs or that the README exists.  
-It is required for the research claims and interpretation layers of the framework.
+It is required for the **research claims and interpretation layers** of the framework.
 
 | Validation area | Why expert input is needed |
 |---|---|
@@ -324,12 +399,16 @@ It is required for the research claims and interpretation layers of the framewor
 | **Legal sufficiency labels** | To confirm whether labels such as sufficient, partial, weak, or missing are defensible as research classifications. |
 | **Worked examples / ABox instances** | To confirm that example procurement records are interpreted fairly and consistently. |
 
-### Still experimental
+### Validation status snapshot
 
-- ⚠️ Legal sufficiency classifications remain experimental research labels.
-- ⚠️ Deterministic evidence matching may produce false positives or miss equivalent wording.
-- ⚠️ Manual clause-level review is required before legal or procurement conclusions.
-- ⚠️ Expert review is required before claiming validated legal, procurement, or forensic adequacy.
+| Validation element | Status |
+|---|---|
+| Framework prototype implemented | ✅ Done |
+| Ontology and mappings drafted | ✅ Done |
+| Human-readable and semantic outputs generated | ✅ Done |
+| Expert-validation protocol fully documented | 🟡 Still needed / can be minimal |
+| Expert review exercise completed | 🟡 Still needed |
+| Final thesis-grade validation write-up | 🟡 Still needed |
 
 ---
 
@@ -350,8 +429,44 @@ Known limitations include:
 
 ## Roadmap
 
-### Done in the current prototype
+### Status legend
 
+- ✅ **Done**
+- 🟡 **Partly done / needs refinement**
+- ⬜ **Still to do**
+
+### Roadmap table
+
+| Item | Status | Notes |
+|---|---|---|
+| Public project landing page via `https://w3id.org/taf` | ✅ | Available |
+| GitHub README describing the TAF framework | ✅ | Implemented |
+| MTALO ontology vocabulary | ✅ | Implemented in current prototype |
+| RDF/XML ontology export preview | ✅ | Implemented |
+| SHACL-style validation artefacts | ✅ | Implemented |
+| SPARQL query artefacts | ✅ | Implemented |
+| JSON mapping / manifest artefacts | ✅ | Implemented |
+| Human-readable HTML report output | ✅ | Implemented |
+| Legal-provision -> safeguard traceability | ✅ | Implemented |
+| Safeguard -> evidence-indicator mapping | ✅ | Implemented |
+| Evidence-indicator -> risk-dimension mapping | ✅ | Implemented |
+| Stable ontology namespace under `https://w3id.org/taf#` | 🟡 | Partly there via public identifier, but formal namespace publication can be strengthened |
+| Turtle and JSON-LD exports | 🟡 | RDF/XML exists; other serialisations still to add or tidy |
+| Expanded SHACL validation profiles | 🟡 | Prototype-level support exists; expansion still needed |
+| SPARQL examples with explanatory documentation | 🟡 | Queries exist; documentation can be improved |
+| Anonymised sample procurement records for public release | 🟡 | Conceptually aligned; publishable examples still needed |
+| Versioned thesis artefact packages | 🟡 | Can be improved with clearer release packaging |
+| Full WiDoco ontology documentation | ⬜ | Still to do |
+| Expert-validation protocol and scoring rubric | ⬜ | Still to do formally |
+| Expert validation exercise with reviewers | ⬜ | Still to do |
+| CI checks for ontology consistency, RDF parsing, SHACL checks, and broken links | ⬜ | Still to do |
+| GitHub release tags for thesis artefact versions | ⬜ | Still to do |
+| Final archived release for examination / reproducibility | ⬜ | Still to do |
+
+<details>
+<summary><strong>Checklist view</strong></summary>
+
+#### Done
 - [x] Create public project landing page through `https://w3id.org/taf`
 - [x] Publish a GitHub README describing the TAF framework
 - [x] Define the MTALO ontology vocabulary
@@ -364,8 +479,7 @@ Known limitations include:
 - [x] Implement safeguard to evidence-indicator mapping
 - [x] Implement evidence-indicator to risk-dimension mapping
 
-### Partly done / needs refinement
-
+#### Partly done / needs refinement
 - [ ] Publish a stable ontology namespace under `https://w3id.org/taf#`
 - [ ] Add complete Turtle and JSON-LD exports alongside RDF/XML
 - [ ] Expand SHACL validation profiles beyond the current prototype checks
@@ -373,14 +487,15 @@ Known limitations include:
 - [ ] Add anonymised sample procurement records suitable for public release
 - [ ] Add clearer versioned release packages for thesis artefact submission
 
-### Still to do
-
+#### Still to do
 - [ ] Generate full WiDoco ontology documentation
 - [ ] Add expert-validation protocol and scoring rubric
 - [ ] Run expert validation with legal, procurement, AI-governance, and digital-forensic reviewers
 - [ ] Add CI checks for ontology consistency, RDF parsing, SHACL checks, and broken links
 - [ ] Add GitHub release tags for thesis artefact versions
 - [ ] Add a final archived release for examination / reproducibility
+
+</details>
 
 ---
 
@@ -404,5 +519,9 @@ This project is released under the [MIT License](LICENSE).
 
 ---
 
+<div align="center">
+
 **Trustworthy AI Forensics (TAF)**  
-*Making AI forensic procurement evidence visible, traceable, and reviewable.*
+*An ontology-supported approach to making AI-forensic procurement evidence more transparent, structured, and reviewable.*
+
+</div>
