@@ -294,17 +294,42 @@ reports/mcc_ai_checker_output.html
 
 TAF is a **research prototype** and PhD artefact.
 
-Current status:
+### Completed / implemented in the current prototype
 
 - ✅ LOT-aligned ontology lifecycle framing
 - ✅ MTALO semantic model and vocabulary
-- ✅ Legal-provision to safeguard traceability
+- ✅ Legal-provision to governance-safeguard traceability
+- ✅ Competency-question driven requirements structure
 - ✅ Contract evidence screening dashboard
+- ✅ Legal-provision → safeguard → evidence-indicator → risk-dimension mapping
 - ✅ RDF/XML ontology export preview
-- ✅ SHACL-style and SPARQL publication artefacts
-- ⚠️ Expert validation still required
-- ⚠️ Legal sufficiency classifications are experimental
-- ⚠️ Manual clause-level review is required before legal conclusions
+- ✅ SHACL-style validation artefacts
+- ✅ SPARQL query artefacts
+- ✅ JSON mapping / manifest-style publication artefacts
+- ✅ Human-readable HTML report output
+
+### Expert validation still required
+
+Expert validation is **not** required to prove that the code runs or that the README exists.  
+It is required for the research claims and interpretation layers of the framework.
+
+| Validation area | Why expert input is needed |
+|---|---|
+| **Legal interpretation** | To confirm that the selected EU AI Act, procurement, GDPR, Charter, MCC-AI, ISO/NIST, and forensic-governance sources are interpreted appropriately. |
+| **Competency questions** | To confirm that the questions are relevant, complete, and suitable for assessing AI-forensic procurement evidence. |
+| **Ontology modelling choices** | To confirm that MTALO classes, properties, and relationships are meaningful to legal, procurement, AI-governance, and digital-forensic reviewers. |
+| **Safeguard mapping** | To confirm that legal requirements are mapped to suitable governance safeguards rather than superficial keyword categories. |
+| **Evidence indicators** | To confirm that selected keywords and phrases are reasonable signals of procurement evidence, and to identify missing or misleading indicators. |
+| **Risk dimensions** | To confirm that missing evidence is assigned to appropriate risk dimensions. |
+| **Legal sufficiency labels** | To confirm whether labels such as sufficient, partial, weak, or missing are defensible as research classifications. |
+| **Worked examples / ABox instances** | To confirm that example procurement records are interpreted fairly and consistently. |
+
+### Still experimental
+
+- ⚠️ Legal sufficiency classifications remain experimental research labels.
+- ⚠️ Deterministic evidence matching may produce false positives or miss equivalent wording.
+- ⚠️ Manual clause-level review is required before legal or procurement conclusions.
+- ⚠️ Expert review is required before claiming validated legal, procurement, or forensic adequacy.
 
 ---
 
@@ -325,15 +350,37 @@ Known limitations include:
 
 ## Roadmap
 
-- [ ] Publish the stable ontology namespace under `https://w3id.org/taf#`
-- [ ] Add complete RDF/XML, Turtle, and JSON-LD exports
+### Done in the current prototype
+
+- [x] Create public project landing page through `https://w3id.org/taf`
+- [x] Publish a GitHub README describing the TAF framework
+- [x] Define the MTALO ontology vocabulary
+- [x] Produce RDF/XML ontology export preview
+- [x] Produce SHACL-style validation artefacts
+- [x] Produce SPARQL query artefacts
+- [x] Produce JSON mapping / manifest artefacts
+- [x] Produce human-readable HTML report output
+- [x] Implement legal-provision to safeguard traceability
+- [x] Implement safeguard to evidence-indicator mapping
+- [x] Implement evidence-indicator to risk-dimension mapping
+
+### Partly done / needs refinement
+
+- [ ] Publish a stable ontology namespace under `https://w3id.org/taf#`
+- [ ] Add complete Turtle and JSON-LD exports alongside RDF/XML
+- [ ] Expand SHACL validation profiles beyond the current prototype checks
+- [ ] Add SPARQL examples with explanatory documentation
+- [ ] Add anonymised sample procurement records suitable for public release
+- [ ] Add clearer versioned release packages for thesis artefact submission
+
+### Still to do
+
 - [ ] Generate full WiDoco ontology documentation
-- [ ] Expand SHACL validation profiles
-- [ ] Add SPARQL examples and query documentation
-- [ ] Add sample anonymised procurement records
 - [ ] Add expert-validation protocol and scoring rubric
-- [ ] Add CI checks for ontology consistency and broken links
-- [ ] Add release tags for thesis artefact versions
+- [ ] Run expert validation with legal, procurement, AI-governance, and digital-forensic reviewers
+- [ ] Add CI checks for ontology consistency, RDF parsing, SHACL checks, and broken links
+- [ ] Add GitHub release tags for thesis artefact versions
+- [ ] Add a final archived release for examination / reproducibility
 
 ---
 
