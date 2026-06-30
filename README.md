@@ -12,6 +12,8 @@
 
 **Making AI forensic procurement evidence visible, traceable, and reviewable.**
 
+**PhD research artefact — Trinity College Dublin**
+
 [Why TAF](#why-taf) •
 [Live Demo](#live-demo--report-highlights) •
 [Framework Architecture](#framework-architecture) •
@@ -19,7 +21,7 @@
 [Traceability Chain](#traceability-chain) •
 [Expert Validation](#expert-validation-for-the-phd) •
 [Semantic Web Outputs](#semantic-web-outputs) •
-[Roadmap](#roadmap)
+[Thesis Readiness](#thesis-readiness-roadmap)
 
 </div>
 
@@ -69,7 +71,7 @@ It links:
 3. **Traceability chain**  
 4. **Expert validation section**  
 5. **Semantic Web outputs**  
-6. **Roadmap / thesis readiness**
+6. **Thesis readiness roadmap**
 
 Start here: [`https://w3id.org/taf`](https://w3id.org/taf)  
 Demo: [`http://trinners.com/`](http://trinners.com/)
@@ -613,103 +615,128 @@ Known limitations include:
 
 ---
 
-## Roadmap
+## Thesis readiness roadmap
+
+This roadmap is written for a **Trinity College Dublin PhD research artefact**.  
+It separates what is already implemented from what still needs to be completed for final thesis submission, validation, and reproducibility.
 
 ### Status legend
 
 | Symbol | Meaning |
 |---|---|
-| ✅ | Done |
-| 🟡 | Partly done / needs refinement |
-| ⬜ | Still to do |
+| ✅ | Completed in the current prototype |
+| 🟡 | Partly implemented / needs refinement |
+| ⬜ | Still to complete |
 | ❌ | Not claimed / deliberately out of scope |
 
-### Roadmap table
+### Implemented artefact components
 
-| Item | Status | Notes |
-|---|---|---|
-| Public project landing page via `https://w3id.org/taf` | ✅ | Available |
-| GitHub README describing the TAF framework | ✅ | Implemented |
-| LOT methodology / lifecycle framing | ✅ | Implemented |
-| MTALO ontology vocabulary | ✅ | Implemented in current prototype |
-| Competency-question driven requirements structure | ✅ | Implemented |
-| Legal-provision -> safeguard traceability | ✅ | Implemented |
-| Safeguard -> evidence-indicator mapping | ✅ | Implemented |
-| Evidence-indicator -> risk-dimension mapping | ✅ | Implemented |
-| Contract evidence screening dashboard | ✅ | Implemented |
-| Source-wired traceability table | ✅ | Implemented |
-| RDF/XML ontology export preview | ✅ | Implemented |
-| RDF/XML validation JSON | ✅ | Implemented |
-| SHACL-style validation artefacts | ✅ | Implemented |
-| SPARQL query pack | ✅ | Implemented |
-| JSON mapping / export manifest artefacts | ✅ | Implemented |
-| Human-readable HTML report output | ✅ | Implemented |
-| Legal sufficiency assessment table (3.3.4) | ✅ | Implemented |
-| Full traceability chain by contract (3.3.5) | ✅ | Implemented |
-| Full Source-Wired Traceability Table (3.3.6) | ✅ | Implemented |
-| Governance safeguard heatmap | ✅ | Implemented |
-| Legal review panel / coverage scope | ✅ | Implemented |
+| Component | Status | Evidence in current artefact |
+|---|---:|---|
+| Public project identifier via `https://w3id.org/taf` | ✅ | Persistent project entry point available |
+| GitHub README and project description | ✅ | Public documentation available |
+| LOT methodology / ontology lifecycle framing | ✅ | Requirements, scope, competency questions, reuse, implementation, publication, and maintenance are represented |
+| MTALO ontology vocabulary | ✅ | Core classes, properties, and semantic model implemented |
+| Competency-question driven requirements structure | ✅ | Competency questions are present and reviewable |
+| Legal-provision to safeguard traceability | ✅ | Legal provisions are mapped to governance safeguards |
+| Safeguard to evidence-indicator mapping | ✅ | Governance safeguards are linked to evidence indicators |
+| Evidence-indicator to risk-dimension mapping | ✅ | Evidence gaps are linked to procurement-risk dimensions |
+| Contract evidence screening dashboard | ✅ | HTML report provides contract-level screening outputs |
+| Legal sufficiency assessment table `3.3.4` | ✅ | Obligation-by-obligation sufficiency table is present |
+| Full traceability chain by contract `3.3.5` | ✅ | Contract-level legal-to-risk traceability is present |
+| Full Source-Wired Traceability Table `3.3.6` | ✅ | Full audit trail is present |
+| Governance safeguard heatmap | ✅ | Governance strength / weakness clustering is present |
+| Legal review panel / coverage scope | ✅ | Legal scope and sufficiency are separated |
+| RDF/XML ontology export | ✅ | Ontology export package exists |
+| RDF/XML validation JSON | ✅ | Export validation artefact exists |
+| SHACL-style validation artefacts | ✅ | Shape artefacts exist |
+| SPARQL query pack | ✅ | Query artefacts exist |
+| JSON mapping / export manifest artefacts | ✅ | Manifest and mapping artefacts exist |
+| Full WiDoco ontology documentation | ✅ | Completed |
+| Human-readable HTML report output | ✅ | Dashboard/report output exists |
 
-| DetectionGap ontology / export plumbing | ✅ | Implemented |
-| Full WiDoco ontology documentation | ✅ | Done |
-| Stable ontology namespace under `https://w3id.org/taf#` | 🟡 | URI policy exists; final thesis namespace hardening can still be improved |
-| Turtle and JSON-LD exports | 🟡 | RDF/XML exists; extra serialisations can be added if needed |
-| Expanded SHACL validation profiles | 🟡 | Prototype support exists; fuller domain-specific rules can be added |
-| SPARQL examples with explanatory documentation | 🟡 | Query pack exists; explanatory documentation can be improved |
-| Full run-wide ABox serialisation | 🟡 | Worked examples exist; every contract/evidence row can still be expanded |
-| End-to-end provenance on every generated evidence row | 🟡 | Baseline provenance exists; full lineage can still be broadened |
-| Versioned thesis artefact packages | 🟡 | Needs final release packaging |
-| Official OOPS! validation evidence | ⬜ | Still to run against final thesis RDF export |
-| Expert-validation protocol and scoring rubric | ⬜ | Still to formalise |
-| Expert validation exercise with reviewers | ⬜ | Still to complete |
-| Final thesis validation write-up / appendix | ⬜ | Still to complete |
-| CI checks for ontology consistency, RDF parsing, SHACL checks, and broken links | ⬜ | Still to add |
-| GitHub release tags for thesis artefact versions | ⬜ | Still to add |
-| Final archived release for examination / reproducibility | ⬜ | Still to add |
-| Automated legal-compliance decision-making | ❌ | Not claimed; TAF supports structured review only |
+### Refinement before final submission
+
+| Component | Status | What still needs refinement |
+|---|---:|---|
+| Stable ontology namespace under `https://w3id.org/taf#` | 🟡 | URI policy exists, but final namespace publication should be hardened for thesis release |
+| Turtle and JSON-LD exports | 🟡 | RDF/XML exists; extra serialisations can be added for reuse and interoperability |
+| SHACL validation profiles | 🟡 | Prototype checks exist; fuller domain-specific validation rules can be added |
+| SPARQL documentation | 🟡 | Query pack exists; explanatory examples should be added |
+| ABox serialisation | 🟡 | Worked examples exist; full run-wide serialisation can be expanded |
+| Provenance coverage | 🟡 | Baseline provenance exists; every evidence row can be given stronger lineage |
+| Versioned thesis packages | 🟡 | Needs final release packaging and archival structure |
+
+### Remaining PhD validation work
+
+| Component | Status | Why it matters |
+|---|---:|---|
+| Expert-validation protocol | ⬜ | Defines reviewer profile, scoring criteria, and review procedure |
+| Expert review exercise | ⬜ | Provides minimum empirical validation of the interpretation layer |
+| Competency-question validation | ⬜ | Confirms the questions are relevant, complete, clear, and answerable |
+| Mapping validation | ⬜ | Confirms legal provisions, safeguards, indicators, and risk dimensions are linked defensibly |
+| Final validation write-up / appendix | ⬜ | Converts expert feedback into thesis evidence |
+| Official final OOPS! validation evidence | ⬜ | Adds external ontology-quality evidence for the final RDF export |
+| CI checks for RDF, SHACL, SPARQL, and broken links | ⬜ | Improves reproducibility and public maintainability |
+| GitHub release tags for thesis artefact versions | ⬜ | Makes the final submitted artefact citable and reproducible |
+| Final archived release for examination | ⬜ | Supports long-term reproducibility and examiner access |
+
+### Deliberately not claimed
+
+| Claim | Status | Reason |
+|---|---:|---|
+| Automated legal-compliance decision-making | ❌ | TAF supports structured review; it does not replace legal assessment |
+| Final legal opinion | ❌ | Manual legal and procurement review remains required |
+| Production certification tool | ❌ | The current artefact is a PhD research prototype |
 
 <details>
-<summary><strong>Checklist view</strong></summary>
+<summary><strong>Compact checklist view</strong></summary>
 
-#### ✅ Done
-- [x] Create public project landing page through `https://w3id.org/taf`
-- [x] Publish a GitHub README describing the TAF framework
-- [x] Define the MTALO ontology vocabulary
-- [x] Produce RDF/XML ontology export preview
-- [x] Produce RDF/XML validation JSON
-- [x] Produce SHACL-style validation artefacts
-- [x] Produce SPARQL query artefacts
-- [x] Produce JSON mapping / manifest artefacts
-- [x] Produce human-readable HTML report output
-- [x] Produce the legal sufficiency assessment table (3.3.4)
-- [x] Produce the full traceability chain by contract (3.3.5)
-- [x] Produce the full Source-Wired Traceability Table (3.3.6)
-- [x] Produce the governance safeguard heatmap
-- [x] Produce the legal review panel / coverage-scope panel
-- [x] Produce full WiDoco ontology documentation
-- [x] Implement legal-provision to safeguard traceability
-- [x] Implement safeguard to evidence-indicator mapping
-- [x] Implement evidence-indicator to risk-dimension mapping
+#### Completed
 
-#### 🟡 Partly done / needs refinement
-- [ ] Harden the final namespace plan under `https://w3id.org/taf#`
-- [ ] Add complete Turtle and JSON-LD exports alongside RDF/XML if required
-- [ ] Expand SHACL validation profiles beyond the current prototype checks
-- [ ] Add fuller SPARQL query explanations
-- [ ] Expand ABox generation from worked examples to full run-wide serialisation
-- [ ] Broaden provenance so every evidence row and report artefact has full lineage
-- [ ] Add clearer versioned release packages for thesis artefact submission
+- [x] Public project identifier via `https://w3id.org/taf`
+- [x] LOT methodology / lifecycle framing
+- [x] MTALO ontology vocabulary
+- [x] Competency-question driven requirements structure
+- [x] Legal-provision to safeguard traceability
+- [x] Safeguard to evidence-indicator mapping
+- [x] Evidence-indicator to risk-dimension mapping
+- [x] Contract evidence screening dashboard
+- [x] Legal sufficiency assessment table `3.3.4`
+- [x] Full traceability chain by contract `3.3.5`
+- [x] Full Source-Wired Traceability Table `3.3.6`
+- [x] Governance safeguard heatmap
+- [x] Legal review panel / coverage scope
+- [x] RDF/XML ontology export
+- [x] SHACL-style validation artefacts
+- [x] SPARQL query pack
+- [x] JSON mapping / export manifest artefacts
+- [x] Full WiDoco ontology documentation
+- [x] Human-readable HTML report output
 
-#### ⬜ Still to do
-- [ ] Run official OOPS! validation against the final exported ontology
-- [ ] Add expert-validation protocol and scoring rubric
-- [ ] Run expert validation with legal, procurement, AI-governance, and digital-forensic reviewers
-- [ ] Write final expert-validation results section / appendix
-- [ ] Add CI checks for ontology consistency, RDF parsing, SHACL checks, and broken links
-- [ ] Add GitHub release tags for thesis artefact versions
-- [ ] Add a final archived release for examination / reproducibility
+#### To refine
+
+- [ ] Harden final ontology namespace
+- [ ] Add Turtle and JSON-LD serialisations
+- [ ] Expand SHACL validation profiles
+- [ ] Add SPARQL query explanations
+- [ ] Expand ABox serialisation
+- [ ] Strengthen row-level provenance
+- [ ] Prepare versioned thesis artefact package
+
+#### To validate
+
+- [ ] Write expert-validation protocol
+- [ ] Run expert review
+- [ ] Validate competency questions
+- [ ] Validate legal-to-safeguard mappings
+- [ ] Validate evidence indicators and risk dimensions
+- [ ] Write final validation chapter / appendix
+- [ ] Add final OOPS! validation evidence
+- [ ] Archive final release for examination
 
 </details>
+
 
 ---
 
