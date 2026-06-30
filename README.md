@@ -8,10 +8,12 @@
 [![Ontology](https://img.shields.io/badge/Ontology-OWL%20%7C%20RDF%20%7C%20SHACL-6d28d9?style=for-the-badge&logo=databricks&logoColor=white)](#semantic-web-outputs)
 [![Status](https://img.shields.io/badge/Status-Research%20Prototype-ca8a04?style=for-the-badge&logo=googlescholar&logoColor=white)](#project-status)
 [![License: MIT](https://img.shields.io/badge/License-MIT-15803d?style=for-the-badge&logo=open-source-initiative&logoColor=white)](LICENSE)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-trinners.com-0f766e?style=for-the-badge&logo=googlechrome&logoColor=white)](http://trinners.com/)
 
 **Making AI forensic procurement evidence visible, traceable, and reviewable.**
 
 [Why TAF](#why-taf) •
+[Live Demo](#live-demo--report-highlights) •
 [Framework Architecture](#framework-architecture) •
 [Framework Layers](#framework-layers) •
 [Traceability Chain](#traceability-chain) •
@@ -62,13 +64,15 @@ It links:
 
 ### 📙 What to review first
 
-1. **Framework architecture**  
-2. **Traceability chain**  
-3. **Expert validation section**  
-4. **Semantic Web outputs**  
-5. **Roadmap / thesis readiness**
+1. **Live demo / report**  
+2. **Framework architecture**  
+3. **Traceability chain**  
+4. **Expert validation section**  
+5. **Semantic Web outputs**  
+6. **Roadmap / thesis readiness**
 
-Start here: [`https://w3id.org/taf`](https://w3id.org/taf)
+Start here: [`https://w3id.org/taf`](https://w3id.org/taf)  
+Demo: [`http://trinners.com/`](http://trinners.com/)
 
 </td>
 </tr>
@@ -128,6 +132,84 @@ Traditional procurement documents often focus on vendor functionality, price, an
 | **Research value** | Supports expert review, reproducibility, semantic traceability, and structured legal/governance interpretation. |
 
 ---
+
+## Live demo & report highlights
+
+### Demo links
+
+- **Project identifier / landing page:** [`https://w3id.org/taf`](https://w3id.org/taf)
+- **Live demo URL:** [`http://trinners.com/`](http://trinners.com/)
+
+### What the HTML report already shows
+
+The current HTML artefact already goes beyond a simple static report. It includes operational sections and dashboards such as:
+
+| Report area | Current status | Notes |
+|---|---|---|
+| **3.3.1 Procurement use-case demonstration** | ✅ Done | Demonstrates how the framework can be applied in a procurement context. |
+| **3.3.2 Cross-contract comparison** | ✅ Done | Compares contracts across the processed dataset. |
+| **3.3.3 Cross-contract decision dashboard** | ✅ Done | Includes dataset risk distributions and decision-support style outputs. |
+| **3.3.4 Legal sufficiency assessment table** | ✅ Done | Obligation-by-obligation mapping from legal provision to safeguard, detection strength, source quality, and experimental legal sufficiency. |
+| **3.3.5 Full traceability chain by contract** | ✅ Done | Shows what each contract evidences, what is missing, and how legal obligations flow through the ontology to structural procurement risk. |
+| **3.3.6 Full Source-Wired Traceability Table** | ✅ Done | Full audit trail across legal provision, safeguard, evidence indicator, matched keywords, snippets, source quality, gap status, and procurement action. |
+| **Governance safeguard heatmap** | ✅ Done | Audit-style heatmap showing where governance strength and weakness cluster across procurement risk dimensions. |
+| **Legal review panel** | ✅ Done | Separates legal scope from legal sufficiency and shows where manual legal review is still required. |
+| **Confidence, negation, and false-positive controls** | ✅ Done | Explicit controls are present in the report structure. |
+
+<details>
+<summary><strong>More detail from the current HTML report</strong></summary>
+
+### Legal sufficiency and traceability outputs
+
+The report already includes these visible sections:
+
+- **3.3.4 Legal sufficiency assessment table**
+- **3.3.5 Full traceability chain by contract**
+- **3.3.6 Show full Source-Wired Traceability Table**
+
+These sections support:
+- obligation-by-obligation assessment;
+- contract-level traceability;
+- source-wired auditability;
+- mapping from legal provision to operational safeguard;
+- evidence indicator and procurement-action visibility.
+
+### Governance safeguard heatmap
+
+The HTML report includes a **Governance safeguard heatmap** with the note that:
+
+- each row is a **governance safeguard**;
+- each column is a **procurement risk dimension**;
+- **green** indicates evidenced;
+- **amber** indicates partial or mixed evidence;
+- **red** indicates missing evidence;
+- **grey** indicates not applicable in the current trace.
+
+This is important because it gives an **audit-style view of where governance strength and weakness cluster**.
+
+### Legal review panel
+
+The HTML report also includes a **Legal Review Panel - Coverage Scope** that separates:
+
+- **legal scope**
+- **legal sufficiency**
+
+It shows that:
+- ticks indicate mapped safeguards with stronger evidence;
+- warnings indicate partial operationalisation;
+- crosses indicate gaps requiring manual legal review.
+
+The panel shown in the report covers:
+- **EU AI Act / AI Act scope**
+- **Public procurement law**
+- **Digital forensics safeguards**
+
+It also shows **Procurement contracts processed (ABox): 3 active workbook contracts**.
+
+</details>
+
+---
+
 
 ## Research contribution
 
@@ -427,6 +509,11 @@ reports/mcc_ai_checker_output.html
 - ✅ Contract evidence screening dashboard
 - ✅ Legal-provision -> safeguard -> evidence-indicator -> risk-dimension mapping
 - ✅ Cross-contract comparison and decision-support reporting
+- ✅ Legal sufficiency assessment table (3.3.4)
+- ✅ Full traceability chain by contract (3.3.5)
+- ✅ Full Source-Wired Traceability Table (3.3.6)
+- ✅ Governance safeguard heatmap
+- ✅ Legal review panel / coverage-scope panel
 - ✅ Source-wired traceability table
 - ✅ RDF/XML ontology export preview
 - ✅ RDF/XML validation JSON
@@ -557,6 +644,12 @@ Known limitations include:
 | SPARQL query pack | ✅ | Implemented |
 | JSON mapping / export manifest artefacts | ✅ | Implemented |
 | Human-readable HTML report output | ✅ | Implemented |
+| Legal sufficiency assessment table (3.3.4) | ✅ | Implemented |
+| Full traceability chain by contract (3.3.5) | ✅ | Implemented |
+| Full Source-Wired Traceability Table (3.3.6) | ✅ | Implemented |
+| Governance safeguard heatmap | ✅ | Implemented |
+| Legal review panel / coverage scope | ✅ | Implemented |
+
 | DetectionGap ontology / export plumbing | ✅ | Implemented |
 | Full WiDoco ontology documentation | ✅ | Done |
 | Stable ontology namespace under `https://w3id.org/taf#` | 🟡 | URI policy exists; final thesis namespace hardening can still be improved |
@@ -588,6 +681,11 @@ Known limitations include:
 - [x] Produce SPARQL query artefacts
 - [x] Produce JSON mapping / manifest artefacts
 - [x] Produce human-readable HTML report output
+- [x] Produce the legal sufficiency assessment table (3.3.4)
+- [x] Produce the full traceability chain by contract (3.3.5)
+- [x] Produce the full Source-Wired Traceability Table (3.3.6)
+- [x] Produce the governance safeguard heatmap
+- [x] Produce the legal review panel / coverage-scope panel
 - [x] Produce full WiDoco ontology documentation
 - [x] Implement legal-provision to safeguard traceability
 - [x] Implement safeguard to evidence-indicator mapping
