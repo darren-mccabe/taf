@@ -1,10 +1,3 @@
-<!--
-README generated from the TAF HTML report artefact and the public w3id.org/taf repository page.
-Project status: research prototype / PhD artefact.
--->
-
-<div align="center">
-
 # Trustworthy AI Forensics (TAF)
 
 ### An ontology-supported framework for legally grounded procurement assessment of AI-enabled digital forensics tools
@@ -18,13 +11,13 @@ Project status: research prototype / PhD artefact.
 
 [Why TAF?](#why-taf) • [Framework Layers](#framework-layers) • [Traceability Chain](#traceability-chain) • [Semantic Web Outputs](#semantic-web-outputs) • [Roadmap](#roadmap)
 
-</div>
-
 ---
 
 ## Why TAF?
 
-AI-enabled forensic tools are increasingly procured, deployed and trusted in high-stakes investigations. Traditional procurement documents often focus on vendor functionality, price and service terms, but they may not clearly expose whether the tool operationalises safeguards such as:
+AI-enabled forensic tools are increasingly procured, deployed and trusted in high-stakes investigations.
+
+Traditional procurement documents often focus on vendor functionality, price and service terms, but they may not clearly expose whether the tool operationalises safeguards such as:
 
 - chain of custody and evidence integrity;
 - data provenance, logging and traceability;
@@ -84,7 +77,6 @@ flowchart LR
     F --> G["Risk Dimensions"]
     G --> H["Structural Procurement Risk"]
     H --> I["HTML / RDF / SHACL / SPARQL / JSON outputs"]
-
     A -. examples .-> A1["EU AI Act<br/>Directive 2014/24/EU<br/>GDPR<br/>Charter rights<br/>MCC-AI<br/>ISO / NIST / forensic standards"]
 ```
 
@@ -168,12 +160,12 @@ TAF currently focuses on evidence that supports trustworthy AI use in digital fo
 
 TAF is designed around selected legal, procurement, AI-governance, cybersecurity and digital-forensic sources, including:
 
-- **EU AI Act** — especially high-risk AI obligations relevant to risk management, data governance, logging, transparency, human oversight, accuracy, robustness and cybersecurity.
+- **EU AI Act** — high-risk AI obligations relevant to risk management, data governance, logging, transparency, human oversight, accuracy, robustness and cybersecurity.
 - **Directive 2014/24/EU** — procurement fairness, equal treatment, transparency, proportionality and documentation.
 - **GDPR** — data protection, minimisation, provenance and personal-data governance.
 - **Charter of Fundamental Rights** — fundamental-rights risk visibility.
 - **MCC-AI high-risk model clauses** — contractual controls and supplier obligations.
-- **ISO/IEC 27037, 27041, 27042** — digital forensic evidence handling and method assurance.
+- **ISO/IEC 27037, 27041 and 27042** — digital forensic evidence handling and method assurance.
 - **ISO/IEC 42001 and ISO MSS concepts** — AI management-system interpretation.
 - **NIST AI RMF** — AI risk-management vocabulary and governance framing.
 
@@ -330,9 +322,5 @@ This project is released under the [MIT License](LICENSE).
 
 ---
 
-<div align="center">
-
 **Trustworthy AI Forensics (TAF)**  
 Making AI forensic procurement evidence visible, traceable and reviewable.
-
-</div>
