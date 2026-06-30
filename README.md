@@ -2,10 +2,10 @@
 
 ### An ontology-supported framework for legally grounded procurement assessment of AI-enabled digital forensics tools
 
-[![Persistent ID](https://img.shields.io/badge/Persistent_ID-w3id.org%2Ftaf-2563eb?style=for-the-badge&logo=internetexplorer&logoColor=white)](https://w3id.org/taf)
-[![Ontology](https://img.shields.io/badge/Ontology-OWL%20%7C%20RDF%20%7C%20SHACL-7c3aed?style=for-the-badge&logo=databricks&logoColor=white)](#semantic-web-outputs)
-[![Research Prototype](https://img.shields.io/badge/Status-Research%20Prototype-f59e0b?style=for-the-badge&logo=googlescholar&logoColor=white)](#status)
-[![License: MIT](https://img.shields.io/badge/License-MIT-16a34a?style=for-the-badge&logo=open-source-initiative&logoColor=white)](LICENSE)
+[![Persistent ID](https://img.shields.io/badge/Persistent_ID-w3id.org%2Ftaf-1d4ed8?style=for-the-badge&logo=internetexplorer&logoColor=white)](https://w3id.org/taf)
+[![Ontology](https://img.shields.io/badge/Ontology-OWL%20%7C%20RDF%20%7C%20SHACL-6d28d9?style=for-the-badge&logo=semanticweb&logoColor=white)](#semantic-web-outputs)
+[![Research Prototype](https://img.shields.io/badge/Status-Research%20Prototype-ca8a04?style=for-the-badge&logo=googlescholar&logoColor=white)](#status)
+[![License: MIT](https://img.shields.io/badge/License-MIT-15803d?style=for-the-badge&logo=open-source-initiative&logoColor=white)](LICENSE)
 
 > **TAF helps turn legal and procurement obligations into traceable governance safeguards, evidence indicators, and procurement-risk signals for AI systems used in digital forensics.**
 
@@ -67,47 +67,58 @@ The framework translates legal and procurement expectations into reusable semant
 
 ## Framework architecture
 
+### Visual overview
+
 ```mermaid
 flowchart TD
 
-    %% --- styles ---
-    classDef source fill:#dbeafe,stroke:#2563eb,stroke-width:1.5px,color:#111827;
-    classDef method fill:#ede9fe,stroke:#7c3aed,stroke-width:1.5px,color:#111827;
-    classDef model fill:#fae8ff,stroke:#c026d3,stroke-width:1.5px,color:#111827;
-    classDef process fill:#ecfccb,stroke:#65a30d,stroke-width:1.5px,color:#111827;
-    classDef risk fill:#fee2e2,stroke:#dc2626,stroke-width:1.5px,color:#111827;
-    classDef output fill:#dcfce7,stroke:#16a34a,stroke-width:1.5px,color:#111827;
+    classDef blue fill:#0f3d91,stroke:#93c5fd,stroke-width:2px,color:#ffffff;
+    classDef purple fill:#5b21b6,stroke:#d8b4fe,stroke-width:2px,color:#ffffff;
+    classDef green fill:#166534,stroke:#86efac,stroke-width:2px,color:#ffffff;
+    classDef red fill:#991b1b,stroke:#fca5a5,stroke-width:2px,color:#ffffff;
+    classDef gold fill:#92400e,stroke:#fcd34d,stroke-width:2px,color:#ffffff;
 
-    A["Legal & governance sources<br/>EU AI Act • Procurement law • GDPR<br/>Charter • MCC-AI • ISO/NIST"]:::source
-    B["LOT ontology lifecycle<br/>scope • requirements • competency questions"]:::method
-    C["MTALO semantic model<br/>classes • properties • legal mappings"]:::model
-    D["Governance safeguards"]:::process
-    E["Evidence indicators"]:::process
-    F["Risk dimensions"]:::risk
-    G["Structural procurement risk"]:::risk
-    H["Outputs<br/>HTML • RDF/XML • SHACL • SPARQL • JSON"]:::output
+    A["1. Legal & governance sources<br/>EU AI Act • Procurement law • GDPR<br/>Charter • MCC-AI • ISO/NIST"]:::blue
+    B["2. LOT ontology lifecycle<br/>scope • requirements • competency questions"]:::purple
+    C["3. MTALO semantic model<br/>classes • properties • legal mappings"]:::purple
+    D["4. Governance safeguards"]:::green
+    E["5. Evidence indicators"]:::green
+    F["6. Risk dimensions"]:::red
+    G["7. Structural procurement risk"]:::red
+    H["8. Outputs<br/>HTML • RDF/XML • SHACL • SPARQL • JSON"]:::gold
 
-    A --> B
-    B --> C
-    C --> D
-    D --> E
-    E --> F
-    F --> G
-    G --> H
+    A --> B --> C --> D --> E --> F --> G --> H
 ```
 
-### Architecture at a glance
+### Full architecture breakdown
 
-1. **Legal and governance sources** provide the normative basis.
-2. **LOT ontology lifecycle** structures scope, requirements, and competency questions.
-3. **MTALO** formalises the semantic model.
-4. **Governance safeguards** express what should be evidenced in procurement artefacts.
-5. **Evidence indicators** connect safeguards to detectable textual signals.
-6. **Risk dimensions** capture where evidence is weak or missing.
-7. **Structural procurement risk** aggregates those gaps into a reviewable interpretation.
-8. **Outputs** publish the results in both human-readable and machine-readable form.
+If the GitHub Mermaid theme makes the diagram hard to read, here is the same architecture in plain text:
 
-> If Mermaid does not render well in a GitHub theme, this text summary still makes the framework architecture clear.
+| Step | Component | What it does |
+|---:|---|---|
+| **1** | **Legal & governance sources** | Provides the normative foundation of the framework, including the **EU AI Act**, **procurement law**, **GDPR**, **Charter rights**, **MCC-AI**, and relevant **ISO/NIST** material. |
+| **2** | **LOT ontology lifecycle** | Structures the ontology-engineering process through scope definition, requirements capture, and competency questions. |
+| **3** | **MTALO semantic model** | Formalises the ontology through classes, properties, legal mappings, and semantic relations. |
+| **4** | **Governance safeguards** | Identifies the governance controls and safeguards that should be evidenced in procurement artefacts. |
+| **5** | **Evidence indicators** | Maps safeguards to specific textual indicators, phrases, or evidence signals found in procurement documentation. |
+| **6** | **Risk dimensions** | Groups weak or missing evidence into broader governance-risk categories. |
+| **7** | **Structural procurement risk** | Produces an interpretable procurement-risk signal based on the presence or absence of relevant evidence. |
+| **8** | **Outputs** | Publishes results in both human-readable and machine-readable forms, including **HTML**, **RDF/XML**, **SHACL**, **SPARQL**, and **JSON** outputs. |
+
+### Simple flow summary
+
+```text
+Legal & governance sources
+    -> LOT ontology lifecycle
+    -> MTALO semantic model
+    -> Governance safeguards
+    -> Evidence indicators
+    -> Risk dimensions
+    -> Structural procurement risk
+    -> Outputs
+```
+
+> This dual presentation is intentional: the Mermaid diagram gives a quick visual summary, while the table guarantees readability in both GitHub light mode and dark mode.
 
 ---
 
