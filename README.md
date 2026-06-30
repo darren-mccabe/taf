@@ -23,6 +23,75 @@
 
 ---
 
+<div align="center">
+
+## 📘 TAF Research Artefact Book
+
+### *Open the framework as a structured research artefact, not just a repository.*
+
+</div>
+
+<table>
+<tr>
+<td width="34%" valign="top">
+
+### 📕 What TAF is
+
+**Trustworthy AI Forensics** is a PhD research artefact for assessing whether AI-forensic procurement documentation contains enough evidence of governance, oversight, transparency, and forensic reliability.
+
+It links:
+
+`law -> safeguards -> evidence -> risk`
+
+</td>
+<td width="33%" valign="top">
+
+### 📗 What the artefact contains
+
+- ✅ LOT lifecycle framing  
+- ✅ MTALO ontology model  
+- ✅ Competency questions  
+- ✅ RDF/XML export  
+- ✅ SHACL-style artefacts  
+- ✅ SPARQL query pack  
+- ✅ WiDoco documentation  
+- ✅ HTML evidence dashboard  
+
+</td>
+<td width="33%" valign="top">
+
+### 📙 What to review first
+
+1. **Framework architecture**  
+2. **Traceability chain**  
+3. **Expert validation section**  
+4. **Semantic Web outputs**  
+5. **Roadmap / thesis readiness**
+
+Start here: [`https://w3id.org/taf`](https://w3id.org/taf)
+
+</td>
+</tr>
+</table>
+
+<details>
+<summary><strong>📖 Open the TAF artefact book contents</strong></summary>
+
+| Chapter | What it explains |
+|---:|---|
+| **1. Problem** | Why AI-forensic procurement needs structured evidence review. |
+| **2. Legal grounding** | How EU AI Act, procurement, GDPR, Charter, MCC-AI, ISO/NIST, and forensic sources are used. |
+| **3. Ontology model** | How MTALO represents legal provisions, safeguards, evidence indicators, and risk dimensions. |
+| **4. Traceability chain** | How TAF links law to governance safeguards and documentary evidence. |
+| **5. Evidence dashboard** | How procurement records are screened and reported. |
+| **6. Semantic exports** | How RDF/XML, SHACL, SPARQL, JSON, and WiDoco support reuse. |
+| **7. PhD validation** | What expert validation is still required and what the bare minimum should cover. |
+| **8. Roadmap** | What is done, partly done, and still required for final thesis packaging. |
+
+</details>
+
+---
+
 > [!IMPORTANT]
 > **TAF helps turn legal and procurement obligations into traceable governance safeguards, evidence indicators, and procurement-risk signals for AI systems used in digital forensics.**
 >
