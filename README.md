@@ -2,34 +2,34 @@
 
 ### An ontology-supported framework for legally grounded procurement assessment of AI-enabled digital forensics tools
 
-[![Persistent ID](https://img.shields.io/badge/Persistent_ID-w3id.org%2Ftaf-0ea5e9?style=for-the-badge)](https://w3id.org/taf)
-[![Ontology](https://img.shields.io/badge/Ontology-OWL%20%7C%20RDF%20%7C%20SHACL-8b5cf6?style=for-the-badge)](#semantic-web-outputs)
-[![Research Prototype](https://img.shields.io/badge/Status-Research%20Prototype-f59e0b?style=for-the-badge)](#status)
-[![License: MIT](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge)](LICENSE)
+[![Persistent ID](https://img.shields.io/badge/Persistent_ID-w3id.org%2Ftaf-2563eb?style=for-the-badge&logo=internetexplorer&logoColor=white)](https://w3id.org/taf)
+[![Ontology](https://img.shields.io/badge/Ontology-OWL%20%7C%20RDF%20%7C%20SHACL-7c3aed?style=for-the-badge&logo=databricks&logoColor=white)](#semantic-web-outputs)
+[![Research Prototype](https://img.shields.io/badge/Status-Research%20Prototype-f59e0b?style=for-the-badge&logo=googlescholar&logoColor=white)](#status)
+[![License: MIT](https://img.shields.io/badge/License-MIT-16a34a?style=for-the-badge&logo=open-source-initiative&logoColor=white)](LICENSE)
 
-**TAF helps turn legal and procurement obligations into traceable governance safeguards, evidence indicators and procurement-risk signals for AI systems used in digital forensics.**
+> **TAF helps turn legal and procurement obligations into traceable governance safeguards, evidence indicators, and procurement-risk signals for AI systems used in digital forensics.**
 
-[Why TAF?](#why-taf) • [Framework Layers](#framework-layers) • [Traceability Chain](#traceability-chain) • [Semantic Web Outputs](#semantic-web-outputs) • [Roadmap](#roadmap)
+**Quick links:** [Why TAF?](#why-taf) • [Framework Architecture](#framework-architecture) • [Framework Layers](#framework-layers) • [Traceability Chain](#traceability-chain) • [Semantic Web Outputs](#semantic-web-outputs) • [Roadmap](#roadmap)
 
 ---
 
 ## Why TAF?
 
-AI-enabled forensic tools are increasingly procured, deployed and trusted in high-stakes investigations.
+AI-enabled forensic tools are increasingly procured, deployed, and trusted in high-stakes investigations.
 
-Traditional procurement documents often focus on vendor functionality, price and service terms, but they may not clearly expose whether the tool operationalises safeguards such as:
+Traditional procurement documents often focus on vendor functionality, price, and service terms, but may not clearly expose whether the tool operationalises safeguards such as:
 
 - chain of custody and evidence integrity;
-- data provenance, logging and traceability;
+- provenance, logging, and traceability;
 - human oversight and escalation;
-- bias, representativeness and data-governance controls;
-- cybersecurity, robustness and resilience;
-- transparency, auditability and documentation.
+- bias, representativeness, and data governance controls;
+- cybersecurity, robustness, and resilience;
+- transparency, auditability, and documentation.
 
-**Trustworthy AI Forensics (TAF)** addresses this gap by modelling the relationship between legal provisions, procurement principles, governance safeguards and textual evidence in procurement artefacts.
+**Trustworthy AI Forensics (TAF)** addresses this gap by modelling the relationship between legal provisions, procurement principles, governance safeguards, and textual evidence in procurement artefacts.
 
-> TAF is not a final compliance engine or legal opinion.  
-> It is a regulatory-learning and expert-review support framework for making procurement evidence more visible, structured and auditable.
+> **TAF is not a final compliance engine or legal opinion.**  
+> It is a regulatory-learning and expert-review support framework for making procurement evidence more visible, structured, and auditable.
 
 ---
 
@@ -39,16 +39,16 @@ TAF contributes an ontology-supported, legally grounded, deterministic screening
 
 Instead of only asking whether a tool performs well, TAF asks:
 
-> **Does the procurement documentation show enough evidence that the system can be governed, audited, challenged and trusted in a forensic context?**
+> **Does the procurement documentation show enough evidence that the system can be governed, audited, challenged, and trusted in a forensic context?**
 
 The framework translates legal and procurement expectations into reusable semantic structures:
 
 | Layer | Contribution |
 |---|---|
-| **Legal interpretation** | Identifies operational requirements from AI, procurement, data-protection and forensic-governance sources. |
+| **Legal interpretation** | Identifies operational requirements from AI, procurement, data-protection, and forensic-governance sources. |
 | **Competency questions** | Turns legal requirements into reviewable questions that structure ontology scope. |
 | **Governance safeguards** | Abstracts recurring obligations into reusable safeguard categories. |
-| **Evidence indicators** | Links safeguards to detectable terms, phrases and source-wired procurement evidence. |
+| **Evidence indicators** | Links safeguards to detectable terms, phrases, and source-wired procurement evidence. |
 | **Risk dimensions** | Aggregates missing or weak evidence into structural procurement-risk signals. |
 | **Semantic exports** | Produces machine-readable ontology and validation artefacts for review and reuse. |
 
@@ -59,26 +59,55 @@ The framework translates legal and procurement expectations into reusable semant
 | Stakeholder | How TAF helps |
 |---|---|
 | **AI system providers** | Understand the evidence customers may expect in procurement documentation. |
-| **Customers and deployers** | Assess whether vendor artefacts expose governance, oversight and forensic safeguards. |
+| **Customers and deployers** | Assess whether vendor artefacts expose governance, oversight, and forensic safeguards. |
 | **Regulators and policymakers** | Observe recurring documentation gaps and support regulatory-learning or sandbox preparation. |
-| **Researchers** | Reuse the ontology, traceability chain and evaluation method for trustworthy AI procurement research. |
+| **Researchers** | Reuse the ontology, traceability chain, and evaluation method for trustworthy AI procurement research. |
 
 ---
 
 ## Framework architecture
 
 ```mermaid
-flowchart LR
-    A["Legal and procurement sources"] --> B["LOT ontology lifecycle"]
-    B --> C["MTALO semantic model"]
-    C --> D["Competency Questions"]
-    D --> E["Governance Safeguards"]
-    E --> F["Evidence Indicators"]
-    F --> G["Risk Dimensions"]
-    G --> H["Structural Procurement Risk"]
-    H --> I["HTML / RDF / SHACL / SPARQL / JSON outputs"]
-    A -. examples .-> A1["EU AI Act<br/>Directive 2014/24/EU<br/>GDPR<br/>Charter rights<br/>MCC-AI<br/>ISO / NIST / forensic standards"]
+flowchart TD
+
+    %% --- styles ---
+    classDef source fill:#dbeafe,stroke:#2563eb,stroke-width:1.5px,color:#111827;
+    classDef method fill:#ede9fe,stroke:#7c3aed,stroke-width:1.5px,color:#111827;
+    classDef model fill:#fae8ff,stroke:#c026d3,stroke-width:1.5px,color:#111827;
+    classDef process fill:#ecfccb,stroke:#65a30d,stroke-width:1.5px,color:#111827;
+    classDef risk fill:#fee2e2,stroke:#dc2626,stroke-width:1.5px,color:#111827;
+    classDef output fill:#dcfce7,stroke:#16a34a,stroke-width:1.5px,color:#111827;
+
+    A["Legal & governance sources<br/>EU AI Act • Procurement law • GDPR<br/>Charter • MCC-AI • ISO/NIST"]:::source
+    B["LOT ontology lifecycle<br/>scope • requirements • competency questions"]:::method
+    C["MTALO semantic model<br/>classes • properties • legal mappings"]:::model
+    D["Governance safeguards"]:::process
+    E["Evidence indicators"]:::process
+    F["Risk dimensions"]:::risk
+    G["Structural procurement risk"]:::risk
+    H["Outputs<br/>HTML • RDF/XML • SHACL • SPARQL • JSON"]:::output
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
 ```
+
+### Architecture at a glance
+
+1. **Legal and governance sources** provide the normative basis.
+2. **LOT ontology lifecycle** structures scope, requirements, and competency questions.
+3. **MTALO** formalises the semantic model.
+4. **Governance safeguards** express what should be evidenced in procurement artefacts.
+5. **Evidence indicators** connect safeguards to detectable textual signals.
+6. **Risk dimensions** capture where evidence is weak or missing.
+7. **Structural procurement risk** aggregates those gaps into a reviewable interpretation.
+8. **Outputs** publish the results in both human-readable and machine-readable form.
+
+> If Mermaid does not render well in a GitHub theme, this text summary still makes the framework architecture clear.
 
 ---
 
@@ -88,12 +117,12 @@ The generated TAF report is organised into six reporting layers. These are repor
 
 | # | Layer | Purpose |
 |---:|---|---|
-| **1** | **LOT ontology lifecycle / requirements layer** | Defines scope, stakeholders, use cases, competency questions, source materials and maintenance points. |
-| **2** | **MTALO semantic layer** | Formalises legal provisions, safeguards, principles, ontology classes, properties and namespaces. |
-| **3** | **TAF operational screening layer** | Produces contract records, coverage interpretation, legal assessment, traceability dashboards and source-wired evidence tables. |
-| **4** | **Validation / reporting layer** | Captures validation posture, TBox/ABox distinction, ground-truth planning and ablation testing. |
-| **5** | **Semantic export layer** | Publishes RDF/XML, SHACL-style shapes, SPARQL queries, JSON mappings and ontology previews. |
-| **6** | **Thesis finalisation and validation roadmap** | Documents remaining ontology-quality, expert-validation and publication steps. |
+| **1** | **LOT ontology lifecycle / requirements layer** | Defines scope, stakeholders, use cases, competency questions, source materials, and maintenance points. |
+| **2** | **MTALO semantic layer** | Formalises legal provisions, safeguards, principles, ontology classes, properties, and namespaces. |
+| **3** | **TAF operational screening layer** | Produces contract records, coverage interpretation, legal assessment, traceability dashboards, and source-wired evidence tables. |
+| **4** | **Validation / reporting layer** | Captures validation posture, TBox/ABox distinction, ground-truth planning, and ablation testing. |
+| **5** | **Semantic export layer** | Publishes RDF/XML, SHACL-style shapes, SPARQL queries, JSON mappings, and ontology previews. |
+| **6** | **Thesis finalisation and validation roadmap** | Documents remaining ontology-quality, expert-validation, and publication steps. |
 
 ---
 
@@ -111,7 +140,7 @@ LegalProvision
   -> StructuralProcurementRisk
 ```
 
-Example reading:
+### Example interpretation path
 
 ```text
 EU AI Act Article 10
@@ -123,7 +152,8 @@ EU AI Act Article 10
   -> structural procurement risk
 ```
 
-The goal is to avoid a shallow jump from **law → keywords**. TAF inserts an interpretation layer so that legal intent is preserved before deterministic screening is applied.
+The goal is to avoid a shallow jump from **law → keywords**.  
+TAF inserts an interpretation layer so that legal intent is preserved before deterministic screening is applied.
 
 ---
 
@@ -134,7 +164,7 @@ The goal is to avoid a shallow jump from **law → keywords**. TAF inserts an in
 | `LegalProvision` | A source legal or regulatory provision relevant to AI-enabled forensic procurement. |
 | `LegalSubProvision` | A more specific operational requirement extracted from a legal provision. |
 | `CompetencyQuestion` | A review question used to test whether the ontology operationalises the requirement. |
-| `GovernanceSafeguard` | A reusable safeguard category such as human oversight, logging or data governance. |
+| `GovernanceSafeguard` | A reusable safeguard category such as human oversight, logging, or data governance. |
 | `EvidenceIndicator` | A detectable textual signal in procurement documentation. |
 | `RiskDimension` | A governance-risk dimension affected by missing or weak evidence. |
 | `StructuralProcurementRisk` | The resulting procurement-risk interpretation based on evidence coverage and safeguard strength. |
@@ -151,21 +181,21 @@ TAF currently focuses on evidence that supports trustworthy AI use in digital fo
 | **Traceability and logging** | event logging, provenance tracking, timestamping, reconstruction, monitoring |
 | **Human oversight** | human-in-the-loop, manual review, operator override, escalation, supervision |
 | **Data governance** | data quality, data lineage, representativeness, retention, GDPR, data minimisation |
-| **Accuracy, robustness and cybersecurity** | validation, testing, benchmarking, resilience, vulnerability management |
+| **Accuracy, robustness, and cybersecurity** | validation, testing, benchmarking, resilience, vulnerability management |
 | **Transparency and documentation** | technical documentation, instructions for use, service levels, supplier cooperation |
 
 ---
 
 ## Legal and governance sources
 
-TAF is designed around selected legal, procurement, AI-governance, cybersecurity and digital-forensic sources, including:
+TAF is designed around selected legal, procurement, AI-governance, cybersecurity, and digital-forensic sources, including:
 
-- **EU AI Act** — high-risk AI obligations relevant to risk management, data governance, logging, transparency, human oversight, accuracy, robustness and cybersecurity.
-- **Directive 2014/24/EU** — procurement fairness, equal treatment, transparency, proportionality and documentation.
-- **GDPR** — data protection, minimisation, provenance and personal-data governance.
+- **EU AI Act** — high-risk AI obligations relevant to risk management, data governance, logging, transparency, human oversight, accuracy, robustness, and cybersecurity.
+- **Directive 2014/24/EU** — procurement fairness, equal treatment, transparency, proportionality, and documentation.
+- **GDPR** — data protection, minimisation, provenance, and personal-data governance.
 - **Charter of Fundamental Rights** — fundamental-rights risk visibility.
 - **MCC-AI high-risk model clauses** — contractual controls and supplier obligations.
-- **ISO/IEC 27037, 27041 and 27042** — digital forensic evidence handling and method assurance.
+- **ISO/IEC 27037, 27041, and 27042** — digital forensic evidence handling and method assurance.
 - **ISO/IEC 42001 and ISO MSS concepts** — AI management-system interpretation.
 - **NIST AI RMF** — AI risk-management vocabulary and governance framing.
 
@@ -174,8 +204,6 @@ TAF is designed around selected legal, procurement, AI-governance, cybersecurity
 ## Semantic Web outputs
 
 The framework is intended to support both human review and machine-readable reuse.
-
-Expected / generated artefacts include:
 
 | Artefact | Purpose |
 |---|---|
@@ -214,8 +242,6 @@ taf/
 ## How to use
 
 ### View the public project
-
-Use the persistent project identifier:
 
 ```text
 https://w3id.org/taf
@@ -288,10 +314,8 @@ Known limitations include:
 
 ## Roadmap
 
-Planned improvements:
-
 - [ ] Publish the stable ontology namespace under `https://w3id.org/taf#`
-- [ ] Add complete RDF/XML, Turtle and JSON-LD exports
+- [ ] Add complete RDF/XML, Turtle, and JSON-LD exports
 - [ ] Generate full WiDoco ontology documentation
 - [ ] Expand SHACL validation profiles
 - [ ] Add SPARQL examples and query documentation
@@ -323,4 +347,4 @@ This project is released under the [MIT License](LICENSE).
 ---
 
 **Trustworthy AI Forensics (TAF)**  
-Making AI forensic procurement evidence visible, traceable and reviewable.
+*Making AI forensic procurement evidence visible, traceable, and reviewable.*
