@@ -66,7 +66,7 @@ It links:
 
 ### 📙 What to review first
 
-1. **Live demo / report**  
+1. **Live demo/report**  
 2. **Framework architecture**  
 3. **Traceability chain**  
 4. **Expert validation section**  
@@ -74,7 +74,7 @@ It links:
 6. **Thesis readiness roadmap**
 
 Start here: [`https://w3id.org/taf`](https://w3id.org/taf)  
-Demo: [`http://trinners.com/`](http://trinners.com/)
+Demo: [`http://trinners.com/`](http://trinners.com/) this is password protceted until the paper is published
 
 </td>
 </tr>
@@ -85,13 +85,13 @@ Demo: [`http://trinners.com/`](http://trinners.com/)
 
 | Chapter | What it explains |
 |---:|---|
-| **1. Problem** | Why AI-forensic procurement needs structured evidence review. |
+| **1. Problem** | Why AI-forensic procurement needs a structured evidence review. |
 | **2. Legal grounding** | How EU AI Act, procurement, GDPR, Charter, MCC-AI, ISO/NIST, and forensic sources are used. |
 | **3. Ontology model** | How MTALO represents legal provisions, safeguards, evidence indicators, and risk dimensions. |
 | **4. Traceability chain** | How TAF links law to governance safeguards and documentary evidence. |
 | **5. Evidence dashboard** | How procurement records are screened and reported. |
 | **6. Semantic exports** | How RDF/XML, SHACL, SPARQL, JSON, and WiDoco support reuse. |
-| **7. PhD validation** | What expert validation is still required and what the bare minimum should cover. |
+| **7. PhD validation** | What expert validation is still required, and what the bare minimum should cover. |
 | **8. Roadmap** | What is done, partly done, and still required for final thesis packaging. |
 
 </details>
@@ -102,7 +102,7 @@ Demo: [`http://trinners.com/`](http://trinners.com/)
 > **TAF helps turn legal and procurement obligations into traceable governance safeguards, evidence indicators, and procurement-risk signals for AI systems used in digital forensics.**
 >
 > TAF is **not** a final compliance engine or legal opinion.  
-> It is a **research and expert-review support framework** for making procurement evidence more visible, structured, and auditable.
+It is a **research and expert-review support framework** to make procurement evidence more visible, structured, and auditable.
 
 ---
 
