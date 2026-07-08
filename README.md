@@ -16,6 +16,7 @@
 
 [Why TAF](#why-taf) •
 [Live Demo](#live-demo--report-highlights) •
+[MTALO Overview](#mapping-trustworthy-ai-to-law-ontology-mtalo) •
 [Framework Architecture](#framework-architecture) •
 [Framework Layers](#framework-layers) •
 [Traceability Chain](#traceability-chain) •
@@ -231,6 +232,30 @@ The framework translates legal and procurement expectations into reusable semant
 | **Evidence indicators** | Links safeguards to detectable terms, phrases, and source-wired procurement evidence. |
 | **Risk dimensions** | Aggregates missing or weak evidence into structural procurement-risk signals. |
 | **Semantic exports** | Produces machine-readable ontology and validation artefacts for review and reuse. |
+
+---
+
+
+## Mapping Trustworthy AI To Law Ontology (MTALO)
+
+The **Mapping Trustworthy AI To Law Ontology (MTALO)** is the semantic layer of TAF. It shows how the research artefact moves from a public procurement dataset and deterministic screening scripts into legally anchored ontology outputs, traceability tables, and documented semantic-web artefacts.
+
+<a href="https://github.com/darren-mccabe/taf/blob/main/MTALO-Overview.png">
+  <img src="https://raw.githubusercontent.com/darren-mccabe/taf/main/MTALO-Overview.png" alt="MTALO overview showing the dataset source, download.py processing, selected dataset outputs, mcc_ai_checker.py processing layers, and semantic-web outputs" width="100%">
+</a>
+
+**Figure: MTALO end-to-end overview.** The diagram summarises the dataset source, `download.py` filtering pipeline, selected evaluation dataset, `mcc_ai_checker.py` processing layers, and the final TAF report plus ontology exports.
+
+Key flow:
+
+```text
+Open Contracting dataset
+  -> download.py
+  -> selected forensic procurement records
+  -> mcc_ai_checker.py
+  -> detection, ontology abstraction, legal anchoring, risk interpretation
+  -> HTML report, traceability tables, RDF, SHACL, SPARQL, manifest, and WiDoco outputs
+```
 
 ---
 
