@@ -74,7 +74,7 @@ It links:
 6. **Thesis readiness roadmap**
 
 Start here: [`https://w3id.org/taf`](https://w3id.org/taf)  
-Demo: [`http://trinners.com/`](http://trinners.com/) this is password protceted until the paper is published
+Demo: [`http://trinners.com/`](http://trinners.com/) this is password protected until the paper is published
 
 </td>
 </tr>
