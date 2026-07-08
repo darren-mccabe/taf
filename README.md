@@ -119,7 +119,7 @@ Traditional procurement documents often focus on vendor functionality, price, an
 - cybersecurity, robustness, and resilience;
 - transparency, auditability, and documentation.
 
-**Trustworthy AI Forensics (TAF)** addresses this gap by modelling the relationship between legal provisions, procurement principles, governance safeguards, and textual evidence in procurement artefacts.
+**Trustworthy AI Forensics (TAF)** addresses this gap by modelling the relationships among legal provisions, procurement principles, governance safeguards, and textual evidence within procurement artefacts.
 
 ---
 
@@ -140,7 +140,7 @@ Traditional procurement documents often focus on vendor functionality, price, an
 ### Demo links
 
 - **Project identifier / landing page:** [`https://w3id.org/taf`](https://w3id.org/taf)
-- **Live demo URL:** [`http://trinners.com/`](http://trinners.com/)
+- **Live demo URL:** [`http://trinners.com/`](http://trinners.com/) this is password protected until the paper is published
 
 ### What the HTML report already shows
 
